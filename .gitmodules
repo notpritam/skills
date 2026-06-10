@@ -1,0 +1,9 @@
+[submodule "explanimate"]
+	path = explanimate
+	url = https://github.com/notpritam/explanimate.git
+[submodule "daylog"]
+	path = daylog
+	url = https://github.com/notpritam/daylog.git
+[submodule "claude-canvas"]
+	path = claude-canvas
+	url = https://github.com/notpritam/claude-canvas.git
