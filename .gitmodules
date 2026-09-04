@@ -7,3 +7,6 @@
 [submodule "claude-canvas"]
 	path = claude-canvas
 	url = https://github.com/notpritam/claude-canvas.git
+[submodule "emergent-file-storage"]
+	path = emergent-file-storage
+	url = https://github.com/notpritam/emergent-file-storage.git

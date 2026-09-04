@@ -12,6 +12,7 @@ skills directory.
 | **explanimate** | Animated, React-based visual explainers — SVG + Tailwind diagram scenes and motion-graphics videos as real code (Motion + Remotion). | [notpritam/explanimate](https://github.com/notpritam/explanimate) |
 | **claude-canvas** | Interactive diagrams on a real tldraw canvas in your browser via `/visualize`. Ships a pre-built bundle. | [notpritam/claude-canvas](https://github.com/notpritam/claude-canvas) |
 | **daylog** | Mirrors the current Claude session into your Obsidian vault — daily note, project rollup, full session record, weekly one-liner. | [notpritam/daylog](https://github.com/notpritam/daylog) |
+| **emergent-file-storage** | Upload files/images to Emergent's internal (VPN-only) file-storage server and get a shareable view URL; list/get/delete uploads. | [notpritam/emergent-file-storage](https://github.com/notpritam/emergent-file-storage) |
 
 ## Install the whole collection
 
@@ -29,6 +30,7 @@ Then link the skills you want into your agent's skills directory:
 ln -s "$PWD/explanimate"   ~/.claude/skills/explanimate
 ln -s "$PWD/claude-canvas" ~/.claude/skills/claude-canvas
 ln -s "$PWD/daylog"        ~/.claude/skills/daylog
+ln -s "$PWD/emergent-file-storage" ~/.claude/skills/emergent-file-storage
 
 # Codex — same SKILL.md format, just a different directory
 ln -s "$PWD/explanimate"   ~/.codex/skills/explanimate
@@ -52,6 +54,8 @@ git clone https://github.com/notpritam/explanimate.git ~/.claude/skills/explanim
   playwright install chromium`. Requires Node ≥ 22, pnpm ≥ 9.
 - **claude-canvas** — ships a pre-built bundle; nothing to install to use it. Requires Node 20+.
 - **daylog** — pure skill scripts, no build. Needs the Obsidian MCP configured.
+- **emergent-file-storage** — pure skill + `scripts/storage.sh` (curl helper), no build. Requires
+  the company VPN to reach `storage-api-docs.internal.emergent.host`.
 
 ## Updating
 
